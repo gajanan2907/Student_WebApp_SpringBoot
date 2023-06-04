@@ -53,4 +53,9 @@ public class StudentController
 		model.addAttribute("msg","Student Data Succesfully Saved");
 		return "index";
 	}
+	@GetMapping("/viewStudents")
+	public String getStudentsData(Model model)
+	{
+		return "data";
+	}
 }
